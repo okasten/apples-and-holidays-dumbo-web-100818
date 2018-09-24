@@ -78,7 +78,7 @@ def all_supplies_in_holidays(holiday_hash)
         day = day.to_s
         day.gsub!("_", " ").titleize
       end 
-      puts "  #{day.to_s.capitalize}: #{supplies.join(", ")}"
+      puts "  #{day}: #{supplies.join(", ")}"
     end 
   end 
 end
