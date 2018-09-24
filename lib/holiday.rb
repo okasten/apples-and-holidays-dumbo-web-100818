@@ -80,9 +80,9 @@ def all_supplies_in_holidays(holiday_hash)
         day.gsub!("_", " ")
         day = day.split(" ") 
         day.each do |word|
-          holiday << "#{word.capitalize!} "
+          word.capitalize!
         end 
-        day = holiday
+        day.join(" ")
       end 
       puts "  #{day.to_s.capitalize}: #{supplies.join(", ")}"
     end 
